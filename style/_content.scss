@@ -1,0 +1,203 @@
+// Стили для контента сайта
+
+.content {
+    margin: 0 0 95px 0;
+}
+
+.top {
+    background: #F1E4E6;
+    height: 764px;
+    margin-bottom: 65px;
+
+    &__inner {
+        width: 100%;
+        height: 100%;
+        background: url("/images/top_preview/Man.png") no-repeat left;
+        justify-content: flex-end;
+        padding: 290px 105px 0 0;
+
+        &::before {
+            content: "";
+            width: 12px;
+            height: 92px;
+            background: #F16D7F;
+            margin: 0 16px 0 0;
+        }
+    }
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__sup {
+        font-weight: 900;
+        @include font-conf(48,58);
+        color: #222;
+    }
+
+    &__sub {
+        font-weight: 700;
+        @include font-conf(32,38);
+        color: #222;
+    }
+
+    &__word {
+        color: #F16D7F;
+    }
+}
+
+.for {
+    @include adaptiveValue("gap",30,20);
+    margin: 0 0 96px 0;
+    &__img img {
+        max-width: 100%;
+    }
+
+    &__img {
+        position: relative;
+    }
+
+    &__triple {
+        @include adaptiveValue("gap",30,20);
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 22, 22, 0.7);
+    }
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__sup {
+        color: #fff;
+        @include font-conf(16,19);
+    }
+
+    &__sub {
+        font-weight: 700;
+        color: #f16d7f;
+        @include font-conf(24,29);
+    }
+}
+
+.fetured {
+    align-items: center;
+
+    &__header {
+        text-align: center;
+        margin: 0 0 48px 0;
+    }
+
+
+    &__title {
+        @include font-conf(30,36);
+        color: #222;
+        margin: 0 0 6px 0;
+    }
+
+    &__text {
+        @include font-conf(14, 17);
+        color: #9F9F9F;
+    }
+
+    &__cards {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 0 48px 0;
+    }
+
+    &__bg {
+        width: 100%;
+        height: 420px;
+        justify-content: center;
+        background: #f3eded;
+
+    }
+
+    &__card {
+        flex-basis: 360px;
+        background: #F8F8F8;
+    }
+
+
+    &__img {
+        position: relative;
+        margin: 0 0 25px 0;
+    }
+
+    &__hover {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(58, 56, 56, 0.86);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        color: #fff;
+        opacity: 0;
+        transition: opacity .3s ease 0s;
+    }
+
+
+    &__cart {
+        border: 1px solid #fff;
+        padding: 16px;
+        
+        & img {
+            margin: 0 11px 0 0;
+        }
+    }
+
+   &__card:hover &__hover{
+       opacity: 1;
+   }
+
+    &__content {
+        padding: 0 20px 20px 20px;
+        flex-grow: 1;
+    }
+
+    &__subtitle {
+        @include font-conf(13,16);
+        color: #000;
+        margin: 0 0 12px 0;
+        
+    }
+
+    &__subtext {
+        font-weight: 300;
+        @include font-conf(14,17);
+        margin: 0 0 18px 0;
+        color: #5D5D5D;
+    }
+
+    &__price {
+        flex-grow: 1;
+        align-items: end;
+        color: #F16D7F;
+    }
+
+    &__btn {
+        @include font-conf(16,19);
+        color: #F26376;
+        border: 1px solid #FF6A6A;
+        padding: 14px 38px;
+        transition: background-color .3s ease 0s;
+
+        &:hover {
+            background-color: #F16D7F;
+            color: #fff;
+        }
+    }
+
+}

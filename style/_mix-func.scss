@@ -1,0 +1,22 @@
+// Функции
+
+@function rem($fz) {
+  @return calc($fz / $fontSize) + rem;
+}
+
+// Миксины
+
+@mixin font-conf($fz: $fontSize, $lh) {
+  font-size: rem($fz);
+  line-height: calc($lh / $fz) * 100%;
+}
+
+@mixin adaptiveValue($value, $pcValue, $mValue) {
+  $addSize: $pcValue - $mValue;
+  // margin: calc(20px + (50 - 20) * ((100vw - мин ширина экрана в px) / (1200 - мин ширина экрана)));
+  // #{$value}: calc(#{$mValue + px} + #{$addSize} * ((100vw - #{$mW1 + px}) / #{$maxWidth - $mW1}));
+  #{$value}: calc(
+    #{rem($mValue)} + #{$addSize} *
+      ((100vw - #{$mW1 + px}) / #{$maxWidth - $mW1})
+  );
+}

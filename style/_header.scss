@@ -1,0 +1,31 @@
+// Стили для шапки сайта
+
+.header {
+  height: 75px;
+  background: #222;
+
+  &__inner {
+    justify-content: space-between;
+  }
+
+  &__main, &__menu {
+    align-items: flex-end;
+  }
+
+  &__main {
+    gap: 40px;
+  }
+
+  &__menu {
+    gap: 33px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 18px 0 18px 0;
+  }
+
+  &__burger:hover .menu{
+    display: block;
+  }
+}
