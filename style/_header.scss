@@ -16,6 +16,8 @@
     gap: 40px;
   }
 
+
+
   &__menu {
     gap: 33px;
   }
@@ -23,9 +25,22 @@
   &__item {
     position: relative;
     padding: 18px 0 18px 0;
+
   }
 
   &__burger:hover .menu{
     display: block;
   }
 }
+
+
+.header__item .fa-solid {
+  color: #fff;
+  font-size: 28px;
+  transition: color .3s ease 0s;
+}
+
+.header__item:hover .fa-solid {
+  color: #F16D7F;
+}
+

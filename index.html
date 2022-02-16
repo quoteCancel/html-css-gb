@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/933c470810.js" crossorigin="anonymous"></script>
     <title>GB Shop</title>
 </head>
 
@@ -20,15 +21,15 @@
                         <img src="images/header/logo.svg" alt="logo">
                     </a>
                     <a href="#" class="header__search header__item">
-                        <img src="images/header/search.svg" alt="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </div>
-                <nav class="header__nav">
+                <nav class="header__nav flex">
                     <ul class="header__menu flex">
 
                         <li class="header__item header__burger">
                             <a href="#" class="header__link">
-                                <img src="images/header/burger_menu.svg" alt="photo">
+                                <i class="fa-solid fa-bars"></i>
                             </a>
                             <div class="menu">
                                 <img src="images/cross.svg" class="menu__close"></img>
@@ -69,13 +70,13 @@
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link">
-                                <img src="images/header/profile.svg" alt="photo">
+                                <i class="fa-solid fa-user"></i>
                             </a>
                         </li>
 
                         <li class="header__item">
                             <a href="#" class="header__link">
-                                <img src="images/header/basket.svg" alt="photo">
+                                <i class="fa-solid fa-cart-shopping"></i>
                             </a>
                         </li>
 
@@ -112,7 +113,7 @@
                 <div class="for__triple flex">
 
                     <div class="for__img">
-                        <a href="#">
+                        <a href="catalog.html">
                             <img src="images/sentencess/woman.jpg" alt="">
                             <div class="for__filter">
                                 <div class="for__title">
@@ -125,7 +126,7 @@
                         </a>
                     </div>
                     <div class="for__img">
-                        <a href="#">
+                        <a href="catalog.html">
                             <img src="images/sentencess/man.jpg" alt="">
                             <div class="for__filter">
                                 <div class="for__title">
@@ -138,7 +139,7 @@
                         </a>
                     </div>
                     <div class="for__img">
-                        <a href="#">
+                        <a href="catalog.html">
                             <img src="images/sentencess/kid.jpg" alt="">
                             <div class="for__filter">
                                 <div class="for__title">
@@ -154,7 +155,7 @@
                 </div>
 
                 <div class="for__img">
-                    <a href="#" class="for__link">
+                    <a href="catalog.html" class="for__link">
                         <img src="images/sentencess/accesories.jpg" alt="">
                         <div class="for__filter">
                             <div class="for__title">
@@ -178,115 +179,153 @@
 
                 <div class="fetured__cards flex">
 
-                    <a href="#" class="fetured__card flex-col">
-                        <div class="fetured__img">
-                            <img src="images/fetured/1.jpg" alt="">
-                            <div class="fetured__hover fetured__opacity">
-                                <span class="fetured__cart fetured__opacity">
-                                    <img src="images/fetured/cart.svg" alt="cart"> Add to Cart
-                                </span>
+                    <div class="card flex-col">
+
+                        <a href="product.html" class="card__pic">
+
+                            <div class="img__wrap">
+                                <img src="images/fetured/1.jpg" alt="man" class="card__img">
                             </div>
-                        </div>
 
-                        <div class="fetured__content flex-col">
-                            <h3 class="fetured__subtitle">ELLERY X M'O CAPSULE</h3>
-                            <p class="fetured__subtext">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi. Lorem ipsum dolor sit
-                                amet consectetur adipisicing elit. Deleniti commodi nihil architecto!</p>
-                            <span class="fetured__price flex">$52.00</span>
-                        </div>
-
-                    </a>
-
-                    <a href="#" class="fetured__card flex-col">
-                        <div class="fetured__img flex">
-                            <div class="fetured__bg flex">
-                                <img src="images/fetured/2.png" alt="">
-                                <div class="fetured__hover fetured__opacity">
-                                    <span class="fetured__cart fetured__opacity">
-                                        <img src="images/fetured/cart.svg" alt="cart"> Add to Cart
-                                    </span>
-                                </div>
+                            <div class="card__text flex-col">
+                                <p class="card__name">ELLERY X M'O CAPSULE</p>
+                                <p class="card__desc">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery </p>
+                                <p class="card__price">$52.00</p>
                             </div>
-                        </div>
-                        <div class="fetured__content flex-col">
-                            <h3 class="fetured__subtitle">ELLERY X M'O CAPSULE</h3>
-                            <p class="fetured__subtext">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <span class="fetured__price flex">$52.00</span>
-                        </div>
-                    </a>
 
-                    <a href="#" class="fetured__card flex-col">
-                        <div class="fetured__img">
-                            <img src="images/fetured/3.jpg" alt="">
-                            <div class="fetured__hover fetured__opacity">
-                                <span class="fetured__cart fetured__opacity">
-                                    <img src="images/fetured/cart.svg" alt="cart"> Add to Cart
-                                </span>
+                            <div class="card__cart flex">
+                                <a href="cart.html" class="card__link">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </a>
                             </div>
-                        </div>
-                        <div class="fetured__content flex-col">
-                            <h3 class="fetured__subtitle">ELLERY X M'O CAPSULE</h3>
-                            <p class="fetured__subtext">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <span class="fetured__price flex">$52.00</span>
-                        </div>
-                    </a>
 
-                    <a href="#" class="fetured__card flex-col">
-                        <div class="fetured__img">
-                            <img src="images/fetured/4.jpg" alt="">
-                            <div class="fetured__hover fetured__opacity">
-                                <span class="fetured__cart fetured__opacity">
-                                    <img src="images/fetured/cart.svg" alt="cart"> Add to Cart
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fetured__content flex-col">
-                            <h3 class="fetured__subtitle">ELLERY X M'O CAPSULE</h3>
-                            <p class="fetured__subtext">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <span class="fetured__price flex">$52.00</span>
-                        </div>
-                    </a>
+                        </a>
 
-                    <a href="#" class="fetured__card flex-col">
-                        <div class="fetured__img">
-                            <img src="images/fetured/5.jpg" alt="">
-                            <div class="fetured__hover fetured__opacity">
-                                <span class="fetured__cart fetured__opacity">
-                                    <img src="images/fetured/cart.svg" alt="cart"> Add to Cart
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fetured__content flex-col">
-                            <h3 class="fetured__subtitle">ELLERY X M'O CAPSULE</h3>
-                            <p class="fetured__subtext">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <span class="fetured__price flex">$52.00</span>
-                        </div>
-                    </a>
 
-                    <a href="#" class="fetured__card flex-col">
-                        <div class="fetured__img">
-                            <img src="images/fetured/6.jpg" alt="">
-                            <div class="fetured__hover fetured__opacity">
-                                <span class="fetured__cart fetured__opacity">
-                                    <img src="images/fetured/cart.svg" alt="cart"> Add to Cart
-                                </span>
+                    </div>
+
+
+                    <div class="card flex-col">
+
+                        <a href="product.html" class="card__pic">
+                            <img src="images/fetured/2.jpg" alt="man" class="card__img">
+                            <div class="card__text flex-col">
+                                <p class="card__name">ELLERY X M'O CAPSULE</p>
+                                <p class="card__desc">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sint molestias
+                                    eveniet?</p>
+                                <p class="card__price">$52.00</p>
                             </div>
-                        </div>
-                        <div class="fetured__content flex-col">
-                            <h3 class="fetured__subtitle">ELLERY X M'O CAPSULE</h3>
-                            <p class="fetured__subtext">Known for her sculptural takes on traditional tailoring,
-                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                            <span class="fetured__price flex">$52.00</span>
-                        </div>
-                    </a>
+
+                            <div class="card__cart flex">
+                                <a href="cart.html" class="card__link">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+
+                    <div class="card flex-col">
+
+                        <a href="product.html" class="card__pic">
+                            <img src="images/fetured/3.jpg" alt="man" class="card__img">
+                            <div class="card__text flex-col">
+                                <p class="card__name">ELLERY X M'O CAPSULE</p>
+                                <p class="card__desc">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="card__price">$52.00</p>
+                            </div>
+
+                            <div class="card__cart flex">
+                                <a href="cart.html" class="card__link">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+
+                    <div class="card flex-col">
+
+                        <a href="product.html" class="card__pic">
+                            <img src="images/fetured/4.jpg" alt="man" class="card__img">
+                            <div class="card__text flex-col">
+                                <p class="card__name">ELLERY X M'O CAPSULE</p>
+                                <p class="card__desc">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="card__price">$52.00</p>
+                            </div>
+
+                            <div class="card__cart flex">
+                                <a href="cart.html" class="card__link">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+
+                    <div class="card flex-col">
+
+                        <a href="product.html" class="card__pic">
+                            <img src="images/fetured/5.jpg" alt="man" class="card__img">
+                            <div class="card__text flex-col">
+                                <p class="card__name">ELLERY X M'O CAPSULE</p>
+                                <p class="card__desc">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="card__price">$52.00</p>
+                            </div>
+
+                            <div class="card__cart flex">
+                                <a href="cart.html" class="card__link">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+
+                    <div class="card flex-col">
+
+                        <a href="product.html" class="card__pic">
+                            <img src="images/fetured/6.jpg" alt="man" class="card__img">
+                            <div class="card__text flex-col">
+                                <p class="card__name">ELLERY X M'O CAPSULE</p>
+                                <p class="card__desc">Known for her sculptural takes on traditional tailoring,
+                                    Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                                <p class="card__price">$52.00</p>
+                            </div>
+
+                            <div class="card__cart flex">
+                                <a href="cart.html" class="card__link">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </a>
+                            </div>
+                        </a>
+
+
+                    </div>
+
                 </div>
 
-                <a href="#" class="fetured__btn">Browse All Product</a>
+                <a href="catalog.html" class="fetured__btn">Browse All Product</a>
             </section>
         </div>
 
@@ -361,22 +400,22 @@
                     <ul class="footer__social flex">
                         <li class="footer__social-item">
                             <a href="#" class="footer__social-link">
-                                <img src="images/footer/face.svg" alt="">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
                             <a href="#" class="footer__social-link">
-                                <img src="images/footer/insta.svg" alt="">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
                             <a href="#" class="footer__social-link">
-                                <img src="images/footer/pin.svg" alt="">
+                                <i class="fa-brands fa-pinterest-p"></i>
                             </a>
                         </li>
                         <li class="footer__social-item">
                             <a href="#" class="footer__social-link">
-                                <img src="images/footer/twit.svg" alt="">
+                                <i class="fa-brands fa-twitter"></i>
                             </a>
                         </li>
                     </ul>
