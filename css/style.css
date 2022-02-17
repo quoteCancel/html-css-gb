@@ -102,6 +102,7 @@ details[open] > summary::after {
   position: absolute;
   top: 65px;
   display: none;
+  z-index: 100;
 }
 .menu::before {
   content: "";
@@ -139,14 +140,12 @@ details[open] > summary::after {
   color: #F16D7F;
   margin: 0 0 12px 0;
 }
-.menu__links {
-  padding: 0 21px;
-}
 .menu__link {
   display: block;
   font-size: 0.875rem;
   line-height: 121.4285714286%;
   color: #6F6E6E;
+  padding: 0 21px;
 }
 .menu__link:not(:last-of-type) {
   margin: 0 0 11px 0;
@@ -265,20 +264,15 @@ details[open] > summary::after {
 
 .product {
   background: #F7F7F7;
+  position: relative;
 }
 .product__top {
   width: 100%;
-  position: relative;
   align-items: center;
   justify-content: center;
 }
-.product__arrows {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-}
 .product__area {
+  position: absolute;
   align-items: center;
   height: 100%;
   cursor: pointer;
@@ -286,6 +280,12 @@ details[open] > summary::after {
 }
 .product__area:hover {
   background: #d8d8d8;
+}
+.product__area.left {
+  left: 0;
+}
+.product__area.right {
+  right: 0;
 }
 .product__area:hover .product__arrow {
   color: #F16D7F;

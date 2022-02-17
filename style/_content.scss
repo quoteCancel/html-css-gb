@@ -86,24 +86,18 @@
 
 .product {
     background: #F7F7F7;
+    position: relative;
     
     &__top {
         width: 100%;
-        position: relative;
         align-items: center;
         justify-content: center;
 
 
     }
 
-    &__arrows {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
-    }
-
     &__area {
+        position: absolute;
         align-items: center;
         height: 100%;
         cursor: pointer;
@@ -111,6 +105,14 @@
         &:hover {
             background: #d8d8d8;    
         }
+    }
+
+    &__area.left {
+        left: 0;
+    }
+
+    &__area.right {
+        right: 0;
     }
 
     &__area:hover &__arrow {
