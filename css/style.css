@@ -148,7 +148,7 @@ details[open] > summary::after {
   padding: 0 21px;
 }
 .menu__link:not(:last-of-type) {
-  margin: 0 0 11px 0;
+  padding-bottom: 11px;
 }
 .menu__link:hover {
   color: #F16D7F;
