@@ -105,6 +105,12 @@
         flex-grow: 1;
         color: #fff;
         background: #F16D7F;
+        transition: background .3s ease 0s;
+
+        &:hover {
+            color: #F16D7F;
+            background: #fff;
+        }
     }
 
     &__bot {
