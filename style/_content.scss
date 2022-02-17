@@ -99,19 +99,29 @@
     &__arrows {
         position: absolute;
         width: 100%;
+        height: 100%;
         justify-content: space-between;
+    }
+
+    &__area {
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        transition: background .3s ease 0s;
+        &:hover {
+            background: #d8d8d8;    
+        }
+    }
+
+    &__area:hover &__arrow {
+        color: #F16D7F;
     }
 
 
     &__arrow {
         padding: 12px 17px;
         background: rgba(42, 42, 42, 0.15);
-        cursor: pointer;
         transition: color .3s ease 0s;
-
-        &:hover {
-            color: #F16D7F;
-        }
     }
 }
 
@@ -220,24 +230,6 @@
 .similar {
     gap: 30px;
 }
-
-summary {
-    display: block;
-  }
-  
-    summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  summary::after {
-    content: '\3009';
-    padding-left: 0.5em;
-    transform: rotate(180deg);
-  }
-  
-  details[open] > summary::after {
-    content: '\FE40';
-  }
 
 .for {
     @include adaptiveValue("gap",30,20);

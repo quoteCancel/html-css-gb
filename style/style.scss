@@ -26,6 +26,24 @@ $fontFamily: 'Lato';
   flex-direction: column;
 }
 
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: '\3009';
+  padding-left: 0.5em;
+  transform: rotate(180deg);
+}
+
+details[open] > summary::after {
+  content: '\FE40';
+}
+
 // Стили основных блоков
 
 @import "widgets";
