@@ -183,35 +183,12 @@
         margin: 0 0 130px 0;
     }
 
-    &__variant, &__spec {
-        text-transform: uppercase;
-        @include font-conf(14,17);
-        color: #6F6E6E;
-        cursor: pointer;
-
-    }
-
     &__choice {
         background: #fff;
     }
 
-    &__variants {
-        position: absolute;
-        gap: 23px;
-        top: 422px;
-    }
-
-    &__variant {
-        margin: 10px 0 0 0;
-        &:hover {
-            &:hover {
-                background:#FF6A6A;
-                color: #fff;
-            }
-        }
-    }
-
     &__link {
+        margin: 48px 0 0 0;
         align-items: center;
         justify-content: center;
         border: 1px solid #FF6A6A;
@@ -225,11 +202,6 @@
             background: #FF6A6A;
         }
     }
-
-}
-
-.similar {
-    gap: 30px;
 }
 
 .for {
@@ -320,7 +292,7 @@
 
 }
 
-.card {
+.my-card {
     width: 360px;
     background: #F8F8F8;
     position: relative;
@@ -345,6 +317,7 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        text-decoration: none;
     }
 
     &__img {
@@ -389,6 +362,95 @@
 
 .fa-cart-plus {
     margin: 0 10px 0 0;
+}
+
+
+.filter {
+    padding: 51px 0 64px 0;
+    align-items: center;
+    gap: 304px;
+
+    &__for {
+        position: relative;
+        margin: 0 0 0 16px;
+
+        &:hover .catalog-menu {
+            display: block;
+        }
+    }
+    
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 600;
+        @include font-conf(14,17);
+        color: #000;
+
+        &:hover {
+            color: #f16d7f;
+            cursor: pointer;
+        }
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 600;
+        @include font-conf(14,17);
+        color: #000;
+
+        &:hover {
+            color: #f16d7f;
+        }
+    }
+}
+
+.similar {
+    gap: 30px;
+
+    &.catalog {
+        align-items: center;
+    }
+
+    &__wrap {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 0 48px 0;
+    }
+
+    &.catalog {
+        margin: 0 0 48px 0;
+    }
+}
+
+.pagination {
+    border: 1px solid #EBEBEB;
+    padding: 12px;
+    margin: 0 auto;
+
+    &__list {
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+    }
+}
+
+.page-link {
+    font-weight: 300;
+    @include font-conf(16,19);
+    color: #c4c4c4;
+
+    &__active {
+        color: #ef5b70;
+    }
+
+    &__arrows {
+        color: #000;
+    }
+
+    &:hover {
+        color: #ef5b70;
+    }
 }
 
 
