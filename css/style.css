@@ -369,7 +369,7 @@ details[open] > summary::after {
   margin: 10px 0 0 0;
 }
 .item__variant:hover:hover {
-  background: rgba(33, 22, 22, 0.5);
+  background: #FF6A6A;
   color: #fff;
 }
 .item__link {
