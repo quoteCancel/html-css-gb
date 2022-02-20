@@ -46,6 +46,164 @@
     }
 }
 
+.arrivals {
+    background: #F8F3F4;
+    padding: 60px 0;
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include font-conf(24,29);
+        color: #F16D7F;
+        text-transform: uppercase;
+    }
+
+    &__nav {
+        gap: 5px;
+    }
+
+    &__link {
+        font-weight: 300;
+        text-transform: uppercase;
+        @include font-conf(14,17);
+        color: #636363;
+
+    }
+
+    &__slash {
+        color: #636363;
+    }
+
+    &__link.active {
+        font-weight: 700;
+        color: #F16D7F;
+    }
+
+
+}
+
+.product {
+    background: #F7F7F7;
+    position: relative;
+    
+    &__top {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    &__area {
+        position: absolute;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        transition: background .3s ease 0s;
+        &:hover {
+            background: #d8d8d8;    
+        }
+    }
+
+    &__area.left {
+        left: 0;
+    }
+
+    &__area.right {
+        right: 0;
+    }
+
+    &__area:hover &__arrow {
+        color: #F16D7F;
+    }
+
+
+    &__arrow {
+        padding: 12px 17px;
+        background: rgba(42, 42, 42, 0.15);
+        transition: color .3s ease 0s;
+    }
+}
+
+.item {
+    position: relative;
+    z-index: 5;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    margin: -30px 0 128px 0;
+    padding: 65px 0;
+    border: 1px solid #EAEAEA;
+
+    &__suptitle {
+        align-items: center;
+        font-weight: 300;
+        @include font-conf(14,17);
+        color: #F16D7F;
+        margin: 0 0 12px 0;
+    }
+
+    &__suptitle::after {
+        margin: 12px 0 0 0;
+        display: block;
+        content: "";
+        width: 63px;
+        height: 3px;
+        background-color: #EF5B70;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        color: #4D4D4D;
+        @include font-conf(18,22);
+        margin: 0 0 50px 0;
+    }
+
+    &__text {
+        width: 550px;
+        font-weight: 300;
+        color: #5E5E5E;
+        @include font-conf(14,17);
+        margin: 0 0 32px 0;
+    }
+
+    &__price {
+        margin: 0 0 65px 0;
+        font-weight: 300;
+        color: #EF5B70;
+        @include font-conf(24,29);
+    }
+
+    &__long-line {
+        height: 1px;
+        width: 640px;
+        background:#EAEAEA;
+        margin: 0 0 130px 0;
+    }
+
+    &__choice {
+        background: #fff;
+    }
+
+    &__link {
+        margin: 48px 0 0 0;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #FF6A6A;
+        padding: 15px 30px;
+        color: #FF6A6A;
+        border: 1px solid #FF6A6A;
+        transition: background-color 0.3s ease 0s;
+
+        &:hover {
+            color: #fff;
+            background: #FF6A6A;
+        }
+    }
+}
+
 .for {
     @include adaptiveValue("gap",30,20);
     margin: 0 0 96px 0;
@@ -70,6 +228,10 @@
         width: 100%;
         height: 100%;
         background: rgba(33, 22, 22, 0.7);
+
+        &:hover {
+            background: rgba(33, 22, 22, 0.5);    
+        }
     }
 
     &__title {
@@ -115,78 +277,6 @@
         margin: 0 0 48px 0;
     }
 
-    &__bg {
-        width: 100%;
-        height: 420px;
-        justify-content: center;
-        background: #f3eded;
-
-    }
-
-    &__card {
-        flex-basis: 360px;
-        background: #F8F8F8;
-    }
-
-
-    &__img {
-        position: relative;
-        margin: 0 0 25px 0;
-    }
-
-    &__hover {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgba(58, 56, 56, 0.86);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        color: #fff;
-        opacity: 0;
-        transition: opacity .3s ease 0s;
-    }
-
-
-    &__cart {
-        border: 1px solid #fff;
-        padding: 16px;
-        
-        & img {
-            margin: 0 11px 0 0;
-        }
-    }
-
-   &__card:hover &__hover{
-       opacity: 1;
-   }
-
-    &__content {
-        padding: 0 20px 20px 20px;
-        flex-grow: 1;
-    }
-
-    &__subtitle {
-        @include font-conf(13,16);
-        color: #000;
-        margin: 0 0 12px 0;
-        
-    }
-
-    &__subtext {
-        font-weight: 300;
-        @include font-conf(14,17);
-        margin: 0 0 18px 0;
-        color: #5D5D5D;
-    }
-
-    &__price {
-        flex-grow: 1;
-        align-items: end;
-        color: #F16D7F;
-    }
-
     &__btn {
         @include font-conf(16,19);
         color: #F26376;
@@ -201,3 +291,167 @@
     }
 
 }
+
+.my-card {
+    width: 360px;
+    background: #F8F8F8;
+    position: relative;
+
+    &:hover img {
+        filter: brightness(40%);
+    }
+    &__cart {
+        position: absolute;
+        justify-content: center;
+        top: 188px;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0;      
+    }
+
+    &:hover &__cart {
+        opacity: 1;
+    }
+
+    &__pic {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__link {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px;
+        pointer-events: auto;
+    }
+
+    &__text {
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+    &__name {
+        @include font-conf(13,16);
+        color: #000;
+        margin: 0 0 12px 0;
+        text-transform: uppercase;
+    }
+
+    &__desc {
+        @include font-conf(14,17);
+        font-weight: 300;
+        color: #5D5D5D;
+        margin: 0 0 18px 0;
+    }
+
+    &__price {
+        @include font-conf(16,19);
+        display: flex;
+        flex-grow: 1;
+        align-items: end;
+        color: #F16D7F;
+    }
+
+}
+
+.fa-cart-plus {
+    margin: 0 10px 0 0;
+}
+
+
+.filter {
+    padding: 51px 0 64px 0;
+    align-items: center;
+    gap: 304px;
+
+    &__for {
+        position: relative;
+        margin: 0 0 0 16px;
+
+        &:hover .catalog-menu {
+            display: block;
+        }
+    }
+    
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 600;
+        @include font-conf(14,17);
+        color: #000;
+
+        &:hover {
+            color: #f16d7f;
+            cursor: pointer;
+        }
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 600;
+        @include font-conf(14,17);
+        color: #000;
+
+        &:hover {
+            color: #f16d7f;
+        }
+    }
+}
+
+.similar {
+    gap: 30px;
+
+    &.catalog {
+        align-items: center;
+    }
+
+    &__wrap {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 0 48px 0;
+    }
+
+    &.catalog {
+        margin: 0 0 48px 0;
+    }
+}
+
+.pagination {
+    border: 1px solid #EBEBEB;
+    padding: 12px;
+    margin: 0 auto;
+
+    &__list {
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+    }
+}
+
+.page-link {
+    font-weight: 300;
+    @include font-conf(16,19);
+    color: #c4c4c4;
+
+    &__active {
+        color: #ef5b70;
+    }
+
+    &__arrows {
+        color: #000;
+    }
+
+    &:hover {
+        color: #ef5b70;
+    }
+}
+
+
+

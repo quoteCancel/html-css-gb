@@ -92,6 +92,7 @@
         flex-basis: 246px;
         padding: 7px 22px;
         outline: none;
+        background-color: #E1E1E1;
     }
 
     &__sub-input::placeholder {
@@ -104,6 +105,12 @@
         flex-grow: 1;
         color: #fff;
         background: #F16D7F;
+        transition: background .3s ease 0s;
+
+        &:hover {
+            color: #F16D7F;
+            background: #fff;
+        }
     }
 
     &__bot {
@@ -125,9 +132,11 @@
         gap: 7px;
     }
 
+
     &__social-item {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 32px;
         height: 32px;
         background: #fff;
@@ -137,5 +146,17 @@
         &:hover {
             background: #F16D7F;
         }
+
+
     }
+
+    &__social-link {
+        color: #000;
+
+    }
+
+    &__social-item:hover &__social-link {
+        color: #fff;
+    }
+
 }
