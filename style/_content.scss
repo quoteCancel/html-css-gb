@@ -486,8 +486,8 @@
         position: relative;
         margin: 0 0 0 16px;
 
-        &:hover .catalog-menu {
-            display: block;
+        &:hover .accordion {
+            display: flex;
         }
     }
     
@@ -503,18 +503,12 @@
             cursor: pointer;
         }
 
-    }
-
-    &__title {
-        text-transform: uppercase;
-        font-weight: 600;
-        @include font-conf(14,17);
-        color: #000;
-
-        &:hover {
-            color: #f16d7f;
+        &:hover .accordion {
+            display: block;
         }
+
     }
+
 }
 
 .similar {
