@@ -324,6 +324,107 @@ details[open] > summary::after {
   color: #F16D7F;
 }
 
+.registration {
+  padding: 64px 0 96px 0;
+}
+.registration__inner {
+  justify-content: space-between;
+}
+.registration__forms {
+  max-width: 360px;
+}
+.registration__name {
+  gap: 21px;
+}
+.registration__title {
+  margin: 0 0 21px 0;
+  color: #222222;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 118.75%;
+}
+.registration__input {
+  border: 1px solid #A4A4A4;
+  outline: none;
+  padding: 15px 17px;
+}
+.registration__input::-moz-placeholder {
+  color: #B1B1B1;
+  font-size: 0.8125rem;
+  line-height: 130.7692307692%;
+}
+.registration__input:-ms-input-placeholder {
+  color: #B1B1B1;
+  font-size: 0.8125rem;
+  line-height: 130.7692307692%;
+}
+.registration__input::placeholder {
+  color: #B1B1B1;
+  font-size: 0.8125rem;
+  line-height: 130.7692307692%;
+}
+.registration__radio {
+  margin: 32px 0;
+  gap: 20px;
+}
+.registration__radio label {
+  font-weight: 300;
+  font-size: 0.6875rem;
+  line-height: 118.1818181818%;
+  color: #000;
+}
+.registration__tip {
+  font-size: 0.8125rem;
+  line-height: 123.0769230769%;
+  font-weight: 300;
+  color: #B1B1B1;
+  margin: 0 0 40px 0;
+}
+.registration__btn {
+  text-transform: uppercase;
+  padding: 30px 16px;
+  background: #F16D7F;
+  border: #f16d7f;
+  font-size: 0.875rem;
+  line-height: 121.4285714286%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 50px;
+  transition: all 0.3s ease 0s;
+}
+.registration__btn:hover {
+  background: #fff;
+  color: #f16d7f;
+}
+.registration__arrow {
+  margin: 0 0 0 20px;
+}
+.registration__info, .registration__proposition {
+  max-width: 652px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 120.8333333333%;
+  color: #000;
+}
+.registration__proposition {
+  margin: 0 0 21px 0;
+}
+.registration__text {
+  margin: 0 0 21px 0;
+}
+.registration__item:not(:last-of-type) {
+  margin: 0 0 16px 0;
+}
+.registration__check {
+  margin: 0 15px 0 0;
+}
+
+.wrap-radio {
+  gap: 10px;
+}
+
 .arrivals {
   background: #F8F3F4;
   padding: 60px 0;
@@ -473,6 +574,10 @@ details[open] > summary::after {
 }
 .for__img {
   position: relative;
+  transition: transform 0.4s ease 0s;
+}
+.for__img:hover {
+  transform: scale(1.05);
 }
 .for__triple {
   gap: calc(
@@ -489,9 +594,10 @@ details[open] > summary::after {
   width: 100%;
   height: 100%;
   background: rgba(33, 22, 22, 0.7);
+  transition: background 0.4s ease 0s;
 }
 .for__filter:hover {
-  background: rgba(33, 22, 22, 0.5);
+  background: rgba(70, 47, 47, 0.5);
 }
 .for__title {
   text-transform: uppercase;
@@ -549,6 +655,10 @@ details[open] > summary::after {
   width: 360px;
   background: #F8F8F8;
   position: relative;
+  transition: transform 0.5s ease 0s;
+}
+.my-card:hover {
+  transform: scale(1.05);
 }
 .my-card:hover img {
   filter: brightness(40%);
