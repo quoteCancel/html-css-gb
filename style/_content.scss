@@ -12,7 +12,7 @@
     &__inner {
         width: 100%;
         height: 100%;
-        background: url("/images/top_preview/Man.png") no-repeat left;
+        background: url("../images/top_preview/Man.png") no-repeat left;
         justify-content: flex-end;
         padding: 290px 105px 0 0;
 
@@ -44,6 +44,108 @@
     &__word {
         color: #F16D7F;
     }
+}
+
+.registration {
+    padding: 64px 0 96px 0;
+
+    &__inner {
+        justify-content: space-between;
+    }
+    &__forms {
+        max-width: 360px;
+    }
+
+    &__name {
+        gap: 21px;
+    }
+
+    &__title {
+        margin: 0 0 21px 0;
+        color: #222222;
+        font-weight: 300;
+        @include font-conf(16,19);
+    }
+
+    &__input {
+        border: 1px solid #A4A4A4;
+        outline: none;
+        padding: 15px 17px;
+
+        &::placeholder {
+            color: #B1B1B1;
+            @include font-conf(13,17);
+        }
+    }
+
+    &__radio {
+        margin: 32px 0;
+        gap: 20px;
+
+        & label {
+            font-weight: 300;
+            @include font-conf(11,13);
+            color: #000;
+        }
+    }
+
+    &__tip {
+        @include font-conf(13,16);
+        font-weight: 300;
+        color:#B1B1B1;
+        margin: 0 0 40px 0;
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        padding: 30px 16px;
+        background:#F16D7F;
+        border: #f16d7f;
+        @include font-conf(14, 17);
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        width: 167px;
+        height: 50px;
+        transition: all .3s ease 0s;
+
+        &:hover {
+            background: #fff;
+            color: #f16d7f;
+
+        }
+    }
+
+    &__arrow {
+        margin: 0 0 0 20px;
+    }
+
+    &__info, &__proposition {
+        max-width: 652px;
+        font-weight: 300;
+        @include font-conf(24,29);
+        color: #000;
+    }
+
+    &__proposition {
+        margin: 0 0 21px 0;
+    }
+
+    &__text {
+        margin: 0 0 21px 0;
+    }
+
+    &__item:not(:last-of-type) {
+        margin: 0 0 16px 0;
+    }
+
+    &__check {
+        margin: 0 15px 0 0;
+    }
+}
+
+.wrap-radio {
+    gap: 10px;
 }
 
 .arrivals {
@@ -213,6 +315,10 @@
 
     &__img {
         position: relative;
+        transition: transform .4s ease 0s;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__triple {
@@ -228,9 +334,10 @@
         width: 100%;
         height: 100%;
         background: rgba(33, 22, 22, 0.7);
+        transition: background .4s ease 0s;
 
         &:hover {
-            background: rgba(33, 22, 22, 0.5);    
+            background: rgba(70, 47, 47, 0.5);    
         }
     }
 
@@ -296,6 +403,11 @@
     width: 360px;
     background: #F8F8F8;
     position: relative;
+    transition: transform .5s ease 0s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     &:hover img {
         filter: brightness(40%);
@@ -374,8 +486,8 @@
         position: relative;
         margin: 0 0 0 16px;
 
-        &:hover .catalog-menu {
-            display: block;
+        &:hover .accordion {
+            display: flex;
         }
     }
     
@@ -391,18 +503,12 @@
             cursor: pointer;
         }
 
-    }
-
-    &__title {
-        text-transform: uppercase;
-        font-weight: 600;
-        @include font-conf(14,17);
-        color: #000;
-
-        &:hover {
-            color: #f16d7f;
+        &:hover .accordion {
+            display: block;
         }
+
     }
+
 }
 
 .similar {
