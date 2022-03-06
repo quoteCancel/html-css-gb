@@ -4,7 +4,7 @@
   @return calc($fz / $fontSize) + rem;
 }
 
-// Миксины
+// Микси  ны
 
 @mixin font-conf($fz: $fontSize, $lh) {
   font-size: rem($fz);
