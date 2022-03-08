@@ -11,6 +11,7 @@
         align-items: end;
     }
 
+
     &__prop {
         align-items: center;
         color: #fff;
@@ -35,7 +36,7 @@
         background: url("../images/footer/back.jpg") no-repeat;
         background-size: cover;
         background-position: bottom;
-        height: 448px;
+        min-height: 448px;
         width: 100%;
     }
 
@@ -47,13 +48,13 @@
     &__mid-bg {
         background: rgba(244, 244, 244, 0.7);
         width: 100%;
-        height: 100%;
         align-items: center;
+        padding: 53px 0 140px 0;
     }
 
     &__review {
         align-items: center;
-        flex-basis: 360px;
+        max-width: 360px;
         text-align: center;
         & figcaption {
             @include font-conf(20,24);
@@ -159,5 +160,24 @@
     &__social-item:hover &__social-link {
         color: #fff;
     }
+}
 
+@media screen and (max-width: 768px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__mid-inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__bot {
+            padding: 24px 23px;
+        }
+    }    
 }
