@@ -37,19 +37,24 @@
         background-size: cover;
         background-position: bottom;
         min-height: 448px;
-        width: 100%;
     }
 
     &__mid-inner {
         align-items: center;
         justify-content: space-around;
+        height: inherit;
+    }
+
+    &__mid-container {
+        width: 100%;
+        height: 100%;
     }
 
     &__mid-bg {
         background: rgba(244, 244, 244, 0.7);
         width: 100%;
         align-items: center;
-        padding: 53px 0 140px 0;
+        padding: 86px 0 140px 0;
     }
 
     &__review {
@@ -161,6 +166,7 @@
         color: #fff;
     }
 }
+  
 
 @media screen and (max-width: 768px) {
     .footer {
@@ -179,5 +185,19 @@
         &__bot {
             padding: 24px 23px;
         }
-    }    
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+
+        &__mid-inner {
+            gap: 60px;
+        }
+        &__bot-inner {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+    }
 }

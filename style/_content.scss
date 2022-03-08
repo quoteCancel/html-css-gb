@@ -6,12 +6,14 @@
 
 .top {
     background: #F1E4E6;
-    min-height: 764px;
+    height: 764px;
     margin-bottom: 65px;
 
     &__inner {
-        justify-content: space-between;
+        position: relative;
         height: inherit;
+        background: url(../images/top_preview/Man.png) no-repeat;
+        background-size: contain;
     }
 
     &__img-wrap {
@@ -23,7 +25,11 @@
     }
 
     &__title {
-        align-items: center;
+        border-left: 12px solid #F16D7F;
+        padding: 0 0 0 16px;
+        position: absolute;
+        top: 290px;
+        right: 101px;
     }
 
     &__sup {
@@ -304,7 +310,7 @@
 }
 
 .for {
-    @include adaptiveValue("gap",30,20);
+    gap: 30px;
     margin: 0 0 96px 0;
     &__img img {
         max-width: 100%;
@@ -319,7 +325,7 @@
     }
 
     &__triple {
-        @include adaptiveValue("gap",30,20);
+        gap: 30px;
     }
 
     &__filter {
@@ -477,7 +483,7 @@
 .filter {
     padding: 51px 0 64px 0;
     align-items: center;
-    gap: 304px;
+
 
     &__for {
         position: relative;
@@ -506,6 +512,10 @@
 
     }
 
+}
+
+.filter-mod {
+    padding: 0 0 0 306px;
 }
 
 .similar {
@@ -751,15 +761,44 @@
     }
 
     .top {
+        height: 367px;
+        margin-bottom: 20px;
         &__title {
             padding: 0 33px 0 0;
         }
+
+        &__inner {
+            background-position-x: 100px;
+        }
+
+        &__title {
+            right: 33px;
+            top: 138px;
+            padding: 0 0 0 16px;
+        }
+
+        &__sup {
+            font-weight: 700;
+            @include font-conf(42,52);
+            color: #222;
+        }
+    
+        &__sub {
+            font-weight: 700;
+            @include font-conf(24,28);
+            color: #222;
+        }
+    }
+
+    .content {
+        margin-bottom: 64px;
     }
 
     .fetured {
 
         &__cards {
             gap: 16px;
+            margin-bottom: 33px;
         }
     }
 
@@ -769,6 +808,62 @@
         }
     }
 
+}
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        padding: 0 8px;
+    }
+
+    .top {
+
+        &__inner {
+            background-image: none;
+        }
+    }
+
+    .for {
+        
+        &__triple {
+            flex-direction: column;
+
+        }
+
+        &__accessor {
+            height: 111px;
+        }
+    }
+
+    .filter {
+
+        padding: 24px 0 32px 0;
+
+        & span {
+            display: none;
+        }
+
+        &__for {
+            margin: 0;
+        }
+    }
+
+    .arrivals {
+        padding: 24px 0 46px 0;
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+
+    .filter-mod {
+        padding: 0 0 0 61px;
+    }
+
+    .fa-chevron-down {
+        margin: 0px 0 0 7px;
+      }
 }
 
 
