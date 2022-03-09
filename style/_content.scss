@@ -197,10 +197,11 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-
-
     }
 
+    &__img {
+        width: 100%;
+    }
     &__area {
         position: absolute;
         align-items: center;
@@ -239,7 +240,7 @@
     text-align: center;
     align-items: center;
     margin: -30px 0 128px 0;
-    padding: 65px 0;
+    padding: 65px 24px;
     border: 1px solid #EAEAEA;
 
     &__suptitle {
@@ -267,7 +268,7 @@
     }
 
     &__text {
-        width: 550px;
+        max-width: 550px;
         font-weight: 300;
         color: #5E5E5E;
         @include font-conf(14,17);
@@ -568,6 +569,10 @@
 
 .in {
 
+    &__inputs {
+        gap: 20px;
+    }
+
     & input {
         outline: none;
     }
@@ -803,6 +808,8 @@
     }
 
     .similar {
+
+
         &__wrap {
             gap: 16px;
         }
@@ -812,7 +819,38 @@
         margin: 0 0 40px 0;
     }
 
-    
+    .in {
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__funcs {
+            justify-content: center;
+            gap: 50px;
+            margin: 30px 0 64px 0;
+        }
+
+        &__adress {
+            margin: 0;
+            width: 100%;
+        }
+
+        &__form {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__inputs, &__total {
+            flex-basis: 50%;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 375px) {
@@ -868,6 +906,82 @@
 
     .fa-chevron-down {
         margin: 0px 0 0 7px;
+    }
+
+    .similar {
+        flex-wrap: wrap;
+    }
+
+    .item {
+
+        margin-bottom: 64px;
+
+        &__long-line {
+            width: 148px;
+            margin: 0 0 50px 0;
+        }
+    }
+
+    .variants {
+        &__spec {
+            @include font-conf(10,12);
+        }
+    }
+
+    .in {
+
+        &__item {
+            height: 188px;
+        }
+
+        &__cart {
+            gap: 30px;
+        }
+
+        &__name {
+            @include font-conf(16,19);
+        }
+
+        &__img {
+            width: 143px;
+            height: 100%;
+        }
+
+        &__stats {
+            padding: 13px 17px;
+        }
+
+        &__characteristics {
+            @include font-conf(14,17);
+        }
+
+        &__quantity {
+            width: 48px;
+            height: 14px;
+        }
+
+        &__close {
+            top: 12px;
+        }
+
+        &__funcs {
+            gap: 9px;
+            margin-bottom: 64px;
+        }
+
+        &__func {
+            @include font-conf(12,14);
+            padding: 9px 18px;
+            flex-basis: 50%;
+        }
+
+        &__form {
+            flex-direction: column;
+        }
+
+        &__inputs, &__total {
+            width: 100%;
+        }
     }
 
 }

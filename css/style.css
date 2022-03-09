@@ -511,6 +511,9 @@ summary::-webkit-details-marker {
   align-items: center;
   justify-content: center;
 }
+.product__img {
+  width: 100%;
+}
 .product__area {
   position: absolute;
   align-items: center;
@@ -543,7 +546,7 @@ summary::-webkit-details-marker {
   text-align: center;
   align-items: center;
   margin: -30px 0 128px 0;
-  padding: 65px 0;
+  padding: 65px 24px;
   border: 1px solid #EAEAEA;
 }
 .item__suptitle {
@@ -570,7 +573,7 @@ summary::-webkit-details-marker {
   margin: 0 0 50px 0;
 }
 .item__text {
-  width: 550px;
+  max-width: 550px;
   font-weight: 300;
   color: #5E5E5E;
   font-size: 0.875rem;
@@ -835,6 +838,9 @@ summary::-webkit-details-marker {
 .in {
   padding: 96px 0 128px 0;
 }
+.in__inputs {
+  gap: 20px;
+}
 .in input {
   outline: none;
 }
@@ -1058,6 +1064,29 @@ summary::-webkit-details-marker {
   .similar.catalog {
     margin: 0 0 40px 0;
   }
+
+  .in__inner {
+    flex-direction: column;
+  }
+  .in__item {
+    width: 100%;
+  }
+  .in__funcs {
+    justify-content: center;
+    gap: 50px;
+    margin: 30px 0 64px 0;
+  }
+  .in__adress {
+    margin: 0;
+    width: 100%;
+  }
+  .in__form {
+    flex-direction: row;
+    align-items: center;
+  }
+  .in__inputs, .in__total {
+    flex-basis: 50%;
+  }
 }
 @media screen and (max-width: 375px) {
   .container {
@@ -1100,6 +1129,68 @@ summary::-webkit-details-marker {
 
   .fa-chevron-down {
     margin: 0px 0 0 7px;
+  }
+
+  .similar {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    margin-bottom: 64px;
+  }
+  .item__long-line {
+    width: 148px;
+    margin: 0 0 50px 0;
+  }
+
+  .variants__spec {
+    font-size: 0.625rem;
+    line-height: 120%;
+  }
+
+  .in__item {
+    height: 188px;
+  }
+  .in__cart {
+    gap: 30px;
+  }
+  .in__name {
+    font-size: 1rem;
+    line-height: 118.75%;
+  }
+  .in__img {
+    width: 143px;
+    height: 100%;
+  }
+  .in__stats {
+    padding: 13px 17px;
+  }
+  .in__characteristics {
+    font-size: 0.875rem;
+    line-height: 121.4285714286%;
+  }
+  .in__quantity {
+    width: 48px;
+    height: 14px;
+  }
+  .in__close {
+    top: 12px;
+  }
+  .in__funcs {
+    gap: 9px;
+    margin-bottom: 64px;
+  }
+  .in__func {
+    font-size: 0.75rem;
+    line-height: 116.6666666667%;
+    padding: 9px 18px;
+    flex-basis: 50%;
+  }
+  .in__form {
+    flex-direction: column;
+  }
+  .in__inputs, .in__total {
+    width: 100%;
   }
 }
 .footer__top {
