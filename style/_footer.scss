@@ -137,6 +137,24 @@
 
     &__social {
         gap: 7px;
+        position: relative;
+
+        &::after {
+            content: "Sign up now to get your own personalized timeline!";
+            font-family: inherit;
+            color: #fff;
+            font-size: 0.7rem;
+            position: absolute;
+            top: 25px;
+            left: -50%;
+            padding: 15px;
+            width: 200%;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
     }
 
 
@@ -176,11 +194,16 @@
             gap: 48px;
         }
 
+        &__top {
+            padding: 24px 0;
+        }
+
         &__mid-inner {
             flex-direction: column;
             align-items: center;
             gap: 48px;
         }
+
 
         &__bot {
             padding: 24px 23px;
@@ -192,6 +215,10 @@
 @media screen and (max-width: 375px) {
     .footer {
 
+        &__registration {
+            padding: 53px 0 53px 0;
+        }
+
         &__mid-inner {
             gap: 60px;
         }
@@ -199,5 +226,13 @@
             flex-direction: column-reverse;
             gap: 40px;
         }
+
+        &__mid-bg {
+            padding: 59px 0 53px 0;
+        }
+    }
+
+    .button-wrap {
+        justify-content: center;
     }
 }
