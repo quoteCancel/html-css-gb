@@ -320,6 +320,9 @@ summary::-webkit-details-marker {
   .header__hide {
     display: none;
   }
+  .header__main {
+    gap: 30px;
+  }
 
   .variants__spec, .variants__choice {
     font-size: 0.75rem;
