@@ -137,24 +137,7 @@
 
     &__social {
         gap: 7px;
-        position: relative;
-
-        &::after {
-            content: "Sign up now to get your own personalized timeline!";
-            font-family: inherit;
-            color: #fff;
-            font-size: 0.7rem;
-            position: absolute;
-            top: 25px;
-            left: -50%;
-            padding: 15px;
-            width: 200%;
-            text-align: center;
-            padding: 15px;
-            cursor: pointer;
-            text-decoration: underline;
-        }
-        
+        position: relative;  
     }
 
 
@@ -229,6 +212,25 @@
 
         &__mid-bg {
             padding: 59px 0 53px 0;
+        }
+
+        &__social {
+            
+            &::after {
+                content: "Sign up now to get your own personalized timeline!";
+                font-family: inherit;
+                color: #fff;
+                font-size: 0.7rem;
+                position: absolute;
+                top: 25px;
+                left: -50%;
+                padding: 15px;
+                width: 200%;
+                text-align: center;
+                padding: 15px;
+                cursor: pointer;
+                text-decoration: underline;
+            }
         }
     }
 

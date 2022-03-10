@@ -1045,6 +1045,18 @@ summary::-webkit-details-marker {
     color: #222;
   }
 
+  .registration__inner {
+    gap: 22px;
+  }
+  .registration__forms, .registration__info {
+    flex-basis: 50%;
+  }
+  .registration__proposition, .registration__text, .registration__list {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 118.75%;
+  }
+
   .content {
     margin-bottom: 64px;
   }
@@ -1130,6 +1142,10 @@ summary::-webkit-details-marker {
 
   .similar {
     flex-wrap: wrap;
+  }
+
+  .product__img {
+    width: 100%;
   }
 
   .item {
@@ -1343,21 +1359,6 @@ summary::-webkit-details-marker {
   gap: 7px;
   position: relative;
 }
-.footer__social::after {
-  content: "Sign up now to get your own personalized timeline!";
-  font-family: inherit;
-  color: #fff;
-  font-size: 0.7rem;
-  position: absolute;
-  top: 25px;
-  left: -50%;
-  padding: 15px;
-  width: 200%;
-  text-align: center;
-  padding: 15px;
-  cursor: pointer;
-  text-decoration: underline;
-}
 .footer__social-item {
   display: flex;
   justify-content: center;
@@ -1409,6 +1410,21 @@ summary::-webkit-details-marker {
   }
   .footer__mid-bg {
     padding: 59px 0 53px 0;
+  }
+  .footer__social::after {
+    content: "Sign up now to get your own personalized timeline!";
+    font-family: inherit;
+    color: #fff;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 25px;
+    left: -50%;
+    padding: 15px;
+    width: 200%;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: underline;
   }
 
   .button-wrap {

@@ -791,6 +791,21 @@
         }
     }
 
+    .registration {
+        &__inner {
+            gap: 22px;
+        }
+
+        &__forms, &__info {
+            flex-basis: 50%;
+        }
+
+        &__proposition, &__text, &__list {
+            font-weight: 300;
+            @include font-conf(16,19);
+        }
+    }
+
     .content {
         margin-bottom: 64px;
     }
@@ -906,6 +921,12 @@
 
     .similar {
         flex-wrap: wrap;
+    }
+
+    .product {
+        &__img {
+            width: 100%;
+        }
     }
 
     .item {
