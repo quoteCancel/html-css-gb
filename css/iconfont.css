@@ -29,3 +29,9 @@
   content: "\e900";
   margin: 0 0 0 11px;
 }
+
+@media screen and (max-width: 375px) {
+  .icon-filter-bars::after {
+    margin: 0;
+  }
+}

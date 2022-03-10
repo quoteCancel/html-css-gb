@@ -11,6 +11,7 @@
         align-items: end;
     }
 
+
     &__prop {
         align-items: center;
         color: #fff;
@@ -34,25 +35,31 @@
     &__mid {
         background: url("../images/footer/back.jpg") no-repeat;
         background-size: cover;
-        height: 448px;
-        width: 100%;
+        background-position: bottom;
+        min-height: 448px;
     }
 
     &__mid-inner {
         align-items: center;
         justify-content: space-around;
+        height: inherit;
+    }
+
+    &__mid-container {
+        width: 100%;
+        height: 100%;
     }
 
     &__mid-bg {
         background: rgba(244, 244, 244, 0.7);
         width: 100%;
-        height: 100%;
         align-items: center;
+        padding: 86px 0 140px 0;
     }
 
     &__review {
         align-items: center;
-        flex-basis: 360px;
+        max-width: 360px;
         text-align: center;
         & figcaption {
             @include font-conf(20,24);
@@ -130,6 +137,7 @@
 
     &__social {
         gap: 7px;
+        position: relative;  
     }
 
 
@@ -158,5 +166,75 @@
     &__social-item:hover &__social-link {
         color: #fff;
     }
+}
+  
 
+@media screen and (max-width: 768px) {
+    .footer {
+        &__inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__top {
+            padding: 24px 0;
+        }
+
+        &__mid-inner {
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+        }
+
+
+        &__bot {
+            padding: 24px 23px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+
+        &__registration {
+            padding: 53px 0 53px 0;
+        }
+
+        &__mid-inner {
+            gap: 60px;
+        }
+        &__bot-inner {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+
+        &__mid-bg {
+            padding: 59px 0 53px 0;
+        }
+
+        &__social {
+            
+            &::after {
+                content: "Sign up now to get your own personalized timeline!";
+                font-family: inherit;
+                color: #fff;
+                font-size: 0.7rem;
+                position: absolute;
+                top: 25px;
+                left: -50%;
+                padding: 15px;
+                width: 200%;
+                text-align: center;
+                padding: 15px;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .button-wrap {
+        justify-content: center;
+    }
 }

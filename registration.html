@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/iconfont.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/933c470810.js" crossorigin="anonymous"></script>
     <title>GB Shop</title>
@@ -90,84 +89,67 @@
     <div class="arrivals">
         <div class="container">
             <div class="arrivals__inner flex">
-                <h1 class="arrivals__title">shopping cart</h1>
+                <h1 class="arrivals__title">registration</h1>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="registration">
+
+        <div class="container">
+            <div class="registration__inner flex">
+                <div class="registration__forms flex-col">
+                    <h2 class="registration__title">Your Name</h2>
+                    <div class="registration__name flex-col">
+                        <input type="text" class="registration__input" placeholder="First Name">
+                        <input type="text" class="registration__input" placeholder="Last Name">
+                    </div>
+                    <div class="registration__radio flex">
+                        <div class="wrap-radio flex">
+                            <input type="radio" id="male" name="sex" class="registration__sex"><label for="male">Male</label>
+                        </div>
+                        <div class="wrap-radio flex">
+                            <input type="radio" id="female" name="sex" class="registration__sex"><label for="female">Female</label>
+                        </div>
+                    </div>
+
+                    <h2 class="registration__title">Your Name</h2>
+                    <div class="registration__name flex-col">
+                        <input type="email" class="registration__input" placeholder="Email">
+                        <input type="password" class="registration__input" placeholder="Password">
+                        <p class="registration__tip">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    </div>
+                    <div class="button-wrap flex">
+                        <button class="registration__btn flex">join now <i class="fa-solid fa-arrow-right-long registration__arrow"></i></button>
+                    </div>
+                </div>
+                <div class="registration__info">
+                    <h3 class="registration__proposition">LOYALTY HAS ITS PERKS</h3>
+                    <p class="registration__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                    <ul class="registration__list">
+                        <li class="registration__item"><i class="registration__check fa-solid fa-check"></i>
+                            15% off welcome offer
+                        </li>
+                        <li class="registration__item"><i class="registration__check fa-solid fa-check"></i>
+                            Free shipping, returns and exchanges on all orders
+                        </li>
+                        <li class="registration__item"><i class="registration__check fa-solid fa-check"></i>
+                            $10 off a purchase on your birthday
+                        </li>
+                        <li class="registration__item"><i class="registration__check fa-solid fa-check"></i>
+                            Early access to products
+                        </li>
+                        <li class="registration__item"><i class="registration__check fa-solid fa-check"></i>
+                            Exclusive offers & rewards
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="in">
-   <div class="container">
-       <div class="in__inner flex">
 
-        <div class="in__cart flex-col">
-
-            <div class="in__item">
-                
-                <div class="in__img-wrap">
-                    <img src="images/fetured/3.jpg" alt="cart in__item" class="in__img">
-                    <i class="fa-solid fa-xmark in__close"></i>
-                </div>
-
-                <div class="in__stats">
-                    <h3 class="in__name">MANGO  PEOPLE <br> T-SHIRT</h3>
-                    <ul class="in__characteristics flex-col">
-                        <li class="in__punkt">Price: <span class="in__price">$300</span></li>
-                        <li class="in__punkt">Color: <span class="in__color">Red</span></li>
-                        <li class="in__punkt">Size: <span class="in__color">XL</span></li>
-                        <li class="in__punkt in__item-quantity flex">Quantity: <input type="number" class="in__quantity" min="1"></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="in__item">
-                
-                <div class="in__img-wrap">
-                    <img src="images/fetured/7.jpg" alt="cart in__item" class="in__img">
-                    <i class="fa-solid fa-xmark in__close"></i>
-                </div>
-
-                <div class="in__stats">
-                    <h3 class="in__name">MANGO  PEOPLE <br> T-SHIRT</h3>
-                    <ul class="in__characteristics flex-col">
-                        <li class="in__punkt">Price: <span class="in__price">$300</span></li>
-                        <li class="in__punkt">Color: <span class="in__color">Red</span></li>
-                        <li class="in__punkt">Size: <span class="in__color">XL</span></li>
-                        <li class="in__punkt in__item-quantity flex">Quantity: <input type="number" class="in__quantity" min="1"></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="in__funcs flex">
-                <a href="#" class="in__func">
-                    clear shopping cart
-                </a>
-                <a href="#" class="in__func">
-                    continue shopping
-                </a>
-            </div>
-        </div>
-
-        <div class="in__adress">
-            <form action="#" class="in__form flex-col">
-                <div class="in__inputs flex-col">
-                    <h3 class="in__subtitle">SHIPPING ADRESS</h3>
-                <input type="text" class="in__input" placeholder="Bangladesh">
-            <input type="text" class="in__input" placeholder="State">
-            <input type="text" class="in__input" placeholder="Postcode / ZIP">
-            <input type="text" class="in__input in__input-quote" placeholder="GET A QUOTE">
-                </div>
-
-            <div class="in__total flex-col">
-                <h3 class="in__subtotal">sub total <span class="in__subprice in__price-margin">$900</span></h3>
-                <h3 class="in__grandtotal">grand total <span class="in__grandprice in__price-margin">$900</span></h3>
-                <hr class="in__line">
-                <button class="in__btn">proceed to checkout</button>
-            </div>
-            </form>
-        </div>
-       </div>
-   </div>
-    </div>
 
     <footer class="footer">
 

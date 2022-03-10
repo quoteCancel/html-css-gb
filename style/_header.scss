@@ -16,8 +16,6 @@
     gap: 40px;
   }
 
-
-
   &__menu {
     gap: 33px;
   }
@@ -42,5 +40,20 @@
 
 .header__item:hover .fa-solid {
   color: #F16D7F;
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    &__hide {
+      display: none;
+    }
+  }
+
+  .variants {
+    &__spec, &__choice {
+      @include font-conf(12,14);
+  }
+
+  }
 }
 
