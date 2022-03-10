@@ -1105,6 +1105,19 @@ summary::-webkit-details-marker {
   .top__inner {
     background-image: none;
   }
+  .top__sup {
+    font-weight: 900;
+    font-size: 2.375rem;
+    line-height: 118.4210526316%;
+  }
+  .top__title {
+    left: 56px;
+  }
+  .top__sub {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 120%;
+  }
 
   .for__triple {
     flex-direction: column;

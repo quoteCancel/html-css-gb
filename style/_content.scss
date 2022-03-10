@@ -875,6 +875,20 @@
         &__inner {
             background-image: none;
         }
+
+        &__sup {
+            font-weight: 900;
+            @include font-conf(38,45);
+        }
+
+        &__title {
+            left: 56px;
+        }
+
+        &__sub {
+            font-weight: 700;
+            @include font-conf(20,24);
+        }
     }
 
     .for {
